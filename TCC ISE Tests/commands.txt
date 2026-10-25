@@ -1,0 +1,34 @@
+================ TCC ISE LIVE DEMO ================
+
+tcc function:
+function tcc { & "C:\Projects\Programming\CD Compiler\TCC compiler\tinycc\win32\tcc.exe" -B "C:\Projects\Programming\CD Compiler\TCC compiler\tinycc\win32" @args }
+
+VALID PROGRAM
+tcc valid.c -o valid.exe
+.\valid.exe
+
+
+LEXICAL ERROR
+tcc lexical_error.c -o lexical_error.exe
+
+
+SYNTAX ERROR
+tcc syntax_error.c -o syntax_error.exe
+
+
+SEMANTIC - TYPE ERROR
+tcc semantic_type_error.c -o semantic_type_error.exe
+
+
+SEMANTIC - UNDEFINED VARIABLE
+tcc semantic_undefined.c -o semantic_undefined.exe
+
+
+SEMANTIC - VALID PROGRAM
+tcc semantic_valid.c -o semantic_valid.exe
+.\semantic_valid.exe
+
+
+CODE GENERATION
+tcc code_generation.c -o code_generation.exe
+.\code_generation.exe
